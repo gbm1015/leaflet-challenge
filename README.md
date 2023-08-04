@@ -1,4 +1,4 @@
-# Leaflet Visualization Challenge - Visualizing United States Geological Survery (USGS) Earthquake Data
+# Leaflet Visualization Challenge - Visualizing United States Geological Survey (USGS) Earthquake Data
 
 ## Background
 
