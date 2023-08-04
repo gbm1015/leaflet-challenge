@@ -42,7 +42,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geoj
             fillOpacity: 1,
             fillColor: getColor(feature.geometry.coordinates[2]),
             color: "#000000",
-            radius: getRadius(feature.properties.map),
+            radius: getRadius(feature.properties.mag),
             stroke: true,
             weight: 0.5
         };
@@ -113,18 +113,20 @@ earthquakes.addTo(map);
             "#ee9c00",
             "#ea822c",
             "#ea2c2c"];
+
 // Looping through our intervals to generate a label with a colored square
 // for each interval. Then return a div.          
         for (let i = 0; i < magnitudes.length; i++) {
             div.innerHTML += "<i style='background: "
                 +colors[i]
-                +" '></i>"
+                +"'></i>"
                 +magnitudes[i]
                 +(magnitudes[i+1] ? "&ndash;" +magnitudes[i+1]+ "<br>" : "+");
         }
         return div;
     };
     legend.addTo(map);
+    
 
 // Retrieve tectonic plate JSON data
     d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json").then(function (platedata) {
