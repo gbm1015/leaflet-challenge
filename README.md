@@ -11,7 +11,7 @@ The USGS is interested in building a new set of tools that will allow them to vi
 1. I created a new repository in GitHub for this project called `leaflet-challenge`. 
 2. Inside the new repository I cloned the new repository to my computer.
 3. Inside my local Git repository, I created a folder titled Leaflet-Part-1. I then added the files from the StarterCode folder that was within the Module 15 Challenge zip file.  The folder included the following:
-   - a folder titled "image" with several *.png files for reference,
+   - a folder titled "image" with several *.png files used for reference,
    - a folder titled "static" that included a subfolder titled "js" with a starter javascript code file titled "logic.js", and a subfolder titled "css" with a starter style file titled "style.css", 
    - an index.html file
 5. I copied the starter code that was provided by our class instructor, to help us get started with the assignment, to the logic.js file.
